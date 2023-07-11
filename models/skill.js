@@ -1,7 +1,7 @@
 const skills = [
-    {id: 125223, skill: 'What?', done: true},
-    {id: 127904, skill: 'How did you get into my house?', done: false},
-    {id: 139608, skill: 'And why are you holding a butterknife?!', done: false}
+    {id: 1253, skill: 'What?', has: true},
+    {id: 1274, skill: 'How did you get into my house?', has: false},
+    {id: 1398, skill: 'And why are you holding a butterknife?!', has: false}
   ];
 	
   function getAll() {
@@ -9,12 +9,12 @@ const skills = [
   }
 
 function getOne(id) {
-    id = parseInt(id)
+    id = parseInt(id);
 
-    return skills.find(skill => skill.id === id);
+    return skills.find((skill) => skill.id === id);
 }
 
   module.exports = {
     getAll,
-    getOne
+    getOne,
   };
