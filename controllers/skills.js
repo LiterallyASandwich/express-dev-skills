@@ -1,4 +1,4 @@
-const Skill = require('../models/todo')
+const Skill = require('../models/skill')
 
 
 function index(req, res) {
@@ -8,7 +8,7 @@ function index(req, res) {
 }
 
 function show(req, res) {
-    res.render('todos/show', {
+    res.render('skills/show', {
         skill: Skill.getOne(req.params.id)
     });
 }
