@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-const todosCtrl = require('../controllers/todos');
+const skillsCtrl = require('../controllers/skills');
 
 // All actual paths start with "/skills"
 
